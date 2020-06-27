@@ -1,4 +1,4 @@
-# A simple, recursive implementation of the MiniMax algorithm.
+# A simple, recursive, implementation of the MiniMax algorithm in Python.
 Made for an assigment of the Hellenic Open Univerciry, PLH31 - "Artificial Intelligence - Applications".
 ![alt text](https://github.com/savvasio/MiniMax/blob/master/MiniMax-tree.png?raw=true)
 
@@ -19,8 +19,10 @@ Game over is the case where there are no available cubes on the table or in the 
 In a better implementation we could take care of that scenario as we also did on the user side. 
 No matter what, if MM’s move lead to negative cubes he will lose the game.
 
-Evaluation starts on the leaves of the tree. Both players alternate during game play so each layer of the tree marks the current player (MAX or MIN). That way the evaluation function can set a higher/positive value if player MAX wins and a lower/negative value if he loses (remember evaluation happens from the MiniMax’s perspective so he will be the MAX player). When all leaves get their evaluation and thanks to the recursive implementation of the algorithm, their values climb up on each layer till the root of the tree also gets evaluated. That way MAX player will try to lead the root to get the highest value possible, assuming that MIN player (user) will try its best to lead to the lowest value possible. When the root gets its value, MAX player (who will be the first one to play) knows what move would lead to victory or at least lead to a less painful loss.
+Evaluation starts on the leaves of the tree. Both players alternate during game play so each layer of the tree marks the current player (MAX or MIN). That way the evaluation function can set a higher/positive value if player MAX wins and a lower/negative value if he loses (remember evaluation happens from the MiniMax’s perspective so he will be the MAX player). When all leaves get their evaluation and thanks to the recursive implementation of the algorithm, their values climb up on each layer till the root of the tree also gets evaluated. That way MAX player will try to lead the root to get the highest possible value, assuming that MIN player (user) will try its best to lead to the lowest value possible. When the root gets its value, MAX player (who will be the first one to play) knows what move would lead to victory or at least lead to a less painful loss.
 
 So the goal of MiniMax is to minimize the possible loss for a worst case scenario, from the algorithm's perspective.
 
-Please see the comments for more.
+Please see the code comments for more.
+
+Made for Python 3 with no dependencies.
