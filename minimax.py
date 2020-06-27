@@ -144,3 +144,4 @@ while(M > 0):
         M = M - int(userChoice)  
         print(f'\nYou chose to remove {userChoice} {plural(int(userChoice))} from the table. Remaining cubes are {M}.')
         if((gameOver(M, MIN))): break # Game over check.
+        
