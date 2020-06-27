@@ -142,6 +142,5 @@ while(M > 0):
         # In valid the game goes on. In any other case it gets stacked on the validation function till a proper input is given.
 
         M = M - int(userChoice)  
-        print(f'\nYou choce to remove {userChoice} {plural(int(userChoice))} from the table. Remaining cubes are {M}.')
+        print(f'\nYou chose to remove {userChoice} {plural(int(userChoice))} from the table. Remaining cubes are {M}.')
         if((gameOver(M, MIN))): break # Game over check.
-        
